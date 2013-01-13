@@ -1,8 +1,9 @@
-= vmix
+# VmixRubyClient
 
-Ruby wrapper for VMIX REST API.
+Ruby wrapper for VMIX REST API
 
-== Installation
+## Installation
+
 Add this line to your application's Gemfile:
 
     gem 'vmix_ruby_client'
@@ -15,12 +16,12 @@ Or install it yourself as:
 
     $ gem install vmix_ruby_client
 
-== Usage
+## Usage
 
 require "rubygems"
-require "vmix"
+require "vmix_ruby_client"
 
-=== All methods require authentication
+### All methods require authentication
 
     Vmix.configure do |config|
       # Endpoint = 'apis.vmixcore.com/apis'
@@ -35,30 +36,6 @@ require "vmix"
       config.api_password = YOUR_API_PASSWORD
     end
 
-== Contributing to vmix
-
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
-
-== Copyright
-
-Copyright (c) 2013 Alan McCann. See LICENSE.txt for
-further details.
-
-
-# VmixRubyClient
-
-Ruby wrapper for VMIX REST API
-
-## Installation
-
-
-
 ## Contributing
 
 1. Fork it
@@ -66,4 +43,3 @@ Ruby wrapper for VMIX REST API
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-

@@ -17,12 +17,18 @@ Jeweler::Tasks.new do |gem|
   gem.name = "vmix"
   gem.homepage = "http://github.com/alanmccann/vmix"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Ruby Client for VMIX REST API}
+  gem.description = %Q{Ruby Client for VMIX REST API}
   gem.email = "alan@imccann.com"
   gem.authors = ["Alan McCann"]
   # dependencies defined in Gemfile
+  gem.add_dependency "httparty", "~> 0.10.0"
+
+  gem.add_development_dependency "rake", "~> 0.9.2.2"
+  gem.add_development_dependency "rspec", "~> 2.12"
+  gem.add_development_dependency "webmock", "~> 1.9.0"
 end
+
 Jeweler::RubygemsDotOrgTasks.new
 
 require 'rake/testtask'
@@ -32,13 +38,13 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
+# require 'rcov/rcovtask'
+# Rcov::RcovTask.new do |test|
+#   test.libs << 'test'
+#   test.pattern = 'test/**/test_*.rb'
+#   test.verbose = true
+#   test.rcov_opts << '--exclude "gems/*"'
+# end
 
 task :default => :test
 
