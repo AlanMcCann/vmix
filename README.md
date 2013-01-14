@@ -49,6 +49,14 @@ require "vmix"
 
   response = v.getMediaList(:start => 100, :alltime => 1)
 
+## Current Status
+
+This currently only implements the token api (not basic auth api) - ie. read only
+
+## TODO
+* Implement basic auth api
+* Write tests
+* Improve documentation
 
 
 ## Contributing
