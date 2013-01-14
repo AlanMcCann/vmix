@@ -14,12 +14,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install vmix_ruby_client
+    $ gem install vmix
 
 ## Usage
 
-require "rubygems"
-require "vmix"
+    require "rubygems"
+    require "vmix"
 
 ### All methods require authentication
 
@@ -45,10 +45,19 @@ require "vmix"
     v.available_methods
 
 ### Access methods with options
-  response = v.getCollections
 
-  response = v.getMediaList(:start => 100, :alltime => 1)
+    response = v.getCollections
 
+    response = v.getMediaList(:start => 100, :alltime => 1)
+
+## Current Status
+
+This currently only implements the token api (not basic auth api) - ie. read only
+
+## TODO
+* Implement basic auth api
+* Write tests
+* Improve documentation
 
 
 ## Contributing

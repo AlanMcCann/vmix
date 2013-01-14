@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alan McCann"]
-  s.date = "2013-01-13"
+  s.date = "2013-01-14"
   s.description = "Ruby Client for VMIX REST API"
   s.email = "alan@imccann.com"
   s.extra_rdoc_files = [
@@ -18,15 +18,23 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
+    ".DS_Store",
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
+    "README.md",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "lib/vmix.rb",
+    "lib/vmix/api.rb",
+    "lib/vmix/client.rb",
+    "lib/vmix/configuration.rb",
+    "lib/vmix/error.rb",
     "test/helper.rb",
-    "test/test_vmix.rb"
+    "test/test_vmix.rb",
+    "vmix.gemspec"
   ]
   s.homepage = "http://github.com/alanmccann/vmix"
   s.licenses = ["MIT"]

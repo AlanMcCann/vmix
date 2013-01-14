@@ -51,7 +51,7 @@ require "vmix"
 
 == Current Status
 
-This currently only implements the token api.
+This currently only implements the token api (not basic auth api) - ie. read only
 
 == TODO
 * Implement basic auth api
