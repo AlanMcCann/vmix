@@ -28,6 +28,10 @@ module Vmix
       download_url = "http://#{self.download_endpoint}?token=#{download_token}&expires=#{expires}&signature=#{signature}"
     end
 
+    def available_api_methods
+      @valid_methods
+    end
+
     def valid_method?(method)
       method = method.to_s
       if respond_to?(method)

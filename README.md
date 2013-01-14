@@ -6,7 +6,7 @@ Ruby wrapper for VMIX REST API
 
 Add this line to your application's Gemfile:
 
-    gem 'vmix_ruby_client'
+    gem 'vmix'
 
 And then execute:
 
@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Usage
 
 require "rubygems"
-require "vmix_ruby_client"
+require "vmix"
 
 ### All methods require authentication
 
@@ -35,6 +35,21 @@ require "vmix_ruby_client"
       config.account_id = YOUR_ACCOUNT_ID
       config.api_password = YOUR_API_PASSWORD
     end
+
+### Initialize the Client
+
+    v = Vmix::Client.new(:method => :token, :token => 'your-vmix-api-token')
+
+### List available API method calls
+
+    v.available_methods
+
+### Access methods with options
+  response = v.getCollections
+
+  response = v.getMediaList(:start => 100, :alltime => 1)
+
+
 
 ## Contributing
 
