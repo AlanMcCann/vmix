@@ -42,7 +42,7 @@ Or install it yourself as:
 
 ### List available API method calls
 
-    v.available_methods
+    v.available_api_methods
 
 ### Access methods with options
 
